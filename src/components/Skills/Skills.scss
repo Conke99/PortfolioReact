@@ -1,0 +1,167 @@
+.Skills {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  .Skills_content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      font-size: 47px;
+      font-weight: 600;
+      letter-spacing: -2px;
+      background: -webkit-linear-gradient(211deg, #4500eb 0%, #038fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-bottom: 20px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 17px;
+      width: 60%;
+      line-height: 30px;
+      padding-top: 20px;
+
+      text-align: center;
+    }
+    .skills_that_I_know {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      flex-wrap: wrap;
+      height: 100%;
+      .skill {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        height: 150px;
+        background-color: #ffffff;
+        box-shadow: 0 0 20px #b6b6b6;
+        -webkit-box-shadow: 0 0 20px #b6b6b6;
+        margin: 10px;
+        img {
+          width: 50px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: -0.9px;
+        }
+      }
+      .skill:hover {
+        border: 1px solid black;
+        background: linear-gradient(
+          211deg,
+          rgb(200, 193, 214) 0%,
+          rgba(3, 143, 255, 1) 100%
+        );
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1687px) {
+  .Skills {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  .Skills {
+    .Skills_content {
+      width: 90%;
+      p {
+        width: 100%;
+      }
+      .skills_that_I_know {
+        margin-top: 20px;
+        .skill {
+          width: 200px;
+          height: 125px;
+          margin: 10px 10px;
+        }
+        .skill:hover {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 733px) {
+  .Skills {
+    .Skills_content {
+      .skills_that_I_know {
+        .skill {
+          width: 150px;
+          height: 100px;
+          img {
+            width: 35px;
+          }
+          p {
+            font-size: 16px;
+
+            letter-spacing: 0.1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 579px) {
+  .Skills {
+    .Skills_content {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 561px) {
+  .Skills {
+    height: 100vh;
+    .Skills_content {
+      h2 {
+        font-size: 42px;
+      }
+      p {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .Skills {
+    .Skills_content {
+      h2 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  .Skills {
+    .Skills_content {
+      h2 {
+        font-size: 34px;
+      }
+      .skills_that_I_know {
+        .skill {
+          margin: 10px 5px;
+        }
+      }
+    }
+  }
+}

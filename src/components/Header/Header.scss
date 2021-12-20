@@ -1,0 +1,128 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  .Header__content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+    }
+    .Choices {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 400px;
+      li {
+        font-size: 21px;
+        cursor: pointer;
+      }
+    }
+    .RightSide__Header {
+      display: flex;
+      flex-direction: row;
+      width: 200px;
+      justify-content: space-evenly;
+      button {
+        border: 1px solid #fff;
+        background: #fff;
+        padding: 17px 27px;
+        border-radius: 50px;
+        color: #313638;
+        font-weight: 600;
+        outline: none;
+        cursor: pointer;
+        font-size: 13px;
+        box-shadow: 0 0 25px #b6b6b6;
+        -webkit-box-shadow: 0 0 25px #b6b6b6;
+      }
+      img {
+        display: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .MobileNav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 944px) {
+  .Header {
+    .Header__content {
+      .Choices {
+        width: 300px;
+        li {
+          font-size: 19px;
+        }
+      }
+      .RightSide__Header {
+        button {
+          padding: 17px 17px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .Header {
+    .Header__content {
+      .Choices {
+        width: 270px;
+        li {
+          font-size: 17px;
+        }
+      }
+      .RightSide__Header {
+        width: 150px;
+        button {
+          padding: 14px 11px;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  .Header {
+    .Header__content {
+      .Choices {
+        display: none;
+      }
+      .MobileNav {
+        display: block;
+        height: 50vh;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        background-color: #bdd4db;
+        .MobileChoices {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100%;
+          li {
+            font-size: 21px;
+            cursor: pointer;
+            font-weight: bold;
+          }
+        }
+      }
+      .RightSide__Header {
+        img {
+          display: block;
+          width: 20px;
+        }
+      }
+    }
+  }
+}
