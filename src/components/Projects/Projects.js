@@ -43,12 +43,12 @@ const data = [
   {
     id: 5,
     img: "/project/Project 5.png",
-    name: "HubPay",
+    name: "Rock-Paper-Scissors",
     about:
-      "In this Project fully responsive design with 5 sections with swiper animation, idea is to transfer money from one country to another",
-    tech: ["React", "State", "Sass"],
-    liveWebsite: "https://determined-brattain-a1f041.netlify.app/",
-    gitHub: "https://github.com/FoodNipple/HubPay",
+      "In this projects I created a litle game that we played as a kids and still do as an adults. The game is called ROCK,PAPER,SCISSORS",
+    tech: ["HTML", "CSS", "JavaScript"],
+    liveWebsite: "https://sad-nobel-8423bc.netlify.app/",
+    gitHub: "https://github.com/FoodNipple/Rock-Paper-Scissors",
   },
   {
     id: 6,
